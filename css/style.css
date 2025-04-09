@@ -1,0 +1,253 @@
+/* Reset styles file */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "FixelText";
+  src: url("../fonts/FixelText/FixelText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FixelText";
+  src: url("../fonts/FixelText/FixelText-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FixelText";
+  src: url("../fonts/FixelText/FixelText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FixelText";
+  src: url("../fonts/FixelText/FixelText-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  min-height: 100svh;
+}
+
+body {
+  font-family: "FixelText", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  color: #333333;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+.container {
+  max-width: 1584px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 104px;
+}
+.header__logo-img {
+  height: 100%;
+  width: 100%;
+}
+.header__navigation-list {
+  padding: 0 1rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.header__navigation-item {
+  font-size: 1.25rem;
+}
+.header__navigation-link {
+  color: #333333;
+  text-decoration: none;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.header__media {
+  display: flex;
+  gap: 0.75rem;
+}
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.header__contacts-group {
+  align-items: center;
+  gap: 0.875rem;
+}
+.header__contacts-paragraph {
+  font-weight: 400;
+}
+.header__contacts-paragraph-bold {
+  font-size: 1.625rem;
+}
+
+.hero {
+  height: 840px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 40px;
+  background: url("../images/hero-bg.png"), #3F00FF;
+  background-repeat: no-repeat;
+  background-position: 15%;
+  position: relative;
+}
+.hero__container {
+  width: 100%;
+  align-self: center;
+  justify-content: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero__paragraph {
+  line-height: 150%;
+  max-width: 780px;
+}
+.hero__img {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+.hero__more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin: 1rem auto;
+}
+
+.main {
+  display: flex;
+}
+.main__container, .main__group {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph {
+  font-size: 1.25rem;
+}
+
+.title {
+  font-size: 5.625rem;
+  line-height: 110%;
+  font-weight: 900;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  line-height: 125%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1.25rem 4rem;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #FFDF00, #FFB800);
+  margin: 20px 0;
+}
+
+.dots {
+  bottom: 100px;
+  position: absolute;
+}
+.dots__list {
+  display: flex;
+  flex-direction: row;
+  width: -moz-min-content;
+  width: min-content;
+  gap: 1.625rem;
+}
+.dots__item {
+  aspect-ratio: 1/1;
+  width: 1rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.dots__item-active {
+  border-color: #FFDF00;
+  background-color: #FFDF00;
+}
