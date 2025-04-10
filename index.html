@@ -11,11 +11,11 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header container">
+        <header class="header container-small">
                 <div class="header__logo">
                     <img class="header__logo-img" src="images/logo.svg" alt="Gl.ua - розробка та підтримка сайтів">
                 </div>
-                <nav class="header__navigation">
+                <nav class="header__navigation" id="burger-menu">
                     <ul class="header__navigation-list">
                         <li class="header__navigation-item">
                             <a class="header__navigation-link" href="#">Чому ми?</a>
@@ -37,13 +37,19 @@
                 <div class="header__info">
                     <ul class="header__media">
                         <li class="header__media-item">
-                            <img class="header__media-image" src="./images/social-facebook.svg" alt="Facebook">
+                            <a class="header__media-link" href="#">
+                                <img class="header__media-image" src="./images/social-facebook.svg" alt="Facebook">
+                            </a>
                         </li>
                         <li class="header__media-item">
-                            <img class="header__media-image" src="./images/social-instagram.svg" alt="Instagram">
+                            <a class="header__media-link" href="#">
+                                <img class="header__media-image" src="./images/social-instagram.svg" alt="Instagram">
+                            </a>
                         </li>
                         <li class="header__media-item">
-                            <img class="header__media-image" src="./images/social-viber.svg" alt="Viber">
+                            <a class="header__media-link" href="#">
+                                <img class="header__media-image" src="./images/social-viber.svg" alt="Viber">
+                            </a>
                         </li>
                     </ul>
 
@@ -54,46 +60,66 @@
                             <img src="./images/arrow-down.svg" alt="Contacts menu">
                         </div>
                     </section>
-                </section>
-            </div>
+                </div>
+                <button class="burger" aria-label="menu-button">
+                    <span class="burger-btn"></span>
+                </button>
+            
         </header>
         <section class="hero" id="hero">
-
             <div class="hero__container container">
                 <section class="hero__content">
                     <p class="hero__paragraph paragraph">Вебстудія №1 з розробки сайтів</p>
-                    <h1 class="hero__title title">Приєднуйтесь <br> до нашої IT-команди</h1>
+                    <h1 class="hero__title title"><span>Приєднуйтесь</span> до нашої IT-команди</h1>
                     <p class="hero__paragraph paragraph">Відкрийте нові перспективи кар'єрного зростання, приєднавшись до нашої інноваційної IT-команди, яка відкриває двері до безмежних можливостей</p>
                     <button class="hero__button button">Спробуй свої сили</button>
                 </section>
                 <section class="dots">
                     <ul class="dots__list">
-                        <li class="dots__item"></li>
+                        <!-- <li class="dots__item"></li>
                         <li class="dots__item"></li>
                         <li class="dots__item dots__item-active"></li>
                         <li class="dots__item"></li>
-                        <li class="dots__item"></li>
+                        <li class="dots__item"></li> -->
                     </ul>
                 </section>    
             </div>
             <img class="hero__img" src="./images/hero-img.png" alt="">
-            <div class="hero__more">
+            <a href="#more" class="hero__more">
                 <p class="paragraph">Дізнатися більше</p>
                 <img class="hero__more-arrow" src="./images/arrow.svg" alt="arrow down">
-            </div>
+            </a>
         </section>
         <main class="main">
-            <div class="main__container container">
-                <div class="main__group">
-                    <h2 class="main__title title">
+            <section class="steps container" id="#more">
+                <div class="steps__info">
+                    <h2 class="steps__title title" >
                         Етапи первірки тестового завдання!
                     </h2>
-                    <p class="main__paragraph paragraph">Ми цінуємо ваш час, тому оперативно перевіряємо тестові роботи вручну, гарантуючи якісну оцінку.</p>
+                    <article class="card">
+                        <span>
+                            <p class="card__paragraph main__paragraph">
+                                <div class="card__stars">
+                                    <img src="./images/card-star.svg" alt="star">
+                                    <img src="./images/card-star.svg" alt="star">
+                                    <img src="./images/card-star.svg" alt="star">
+                                </div>
+                            </p>
+                        </span>
+                        <p class="card__paragraph main__paragraph">Хоча тестові завдання <strong>приймає бот</strong>, їх <strong>перевіряють реальні люди</strong> – твої майбутні <strong>колеги з відділу</strong>, до якого ти подаєш резюме. Якщо робота підходить, саме команда обирає тебе та <strong>допомагатиме під час стажування.</strong></p>
+                    </article>
+                    <p class="steps__paragraph main__paragraph">Не дивуйтеся, якщо отримаєте відповідь уже за 5 хвилин після подачі або пізно вночі. Ми не працюємо за застарілими стандартами й перевіряємо тестові завдання у вільний час, навіть з особистих телефонів – усе для того, щоб ви швидше дізналися результат.</p>
                 </div>
-                <div class="main__group">
+                <div class="steps__content">
+                    <p class="steps__paragraph main__paragraph">Ми цінуємо ваш час, тому оперативно перевіряємо тестові роботи вручну, гарантуючи якісну оцінку.</p>
+                    <div class="steps__emoji">
+                        <img class="steps__emoji-img" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f973/512.gif" alt="🥳" width="32" height="32">
+                    </div>
+                </div>
+            </section>
+            <section>
                 
-                </div>
-            </div>
+            </section>
         </main>
     </div>
 </body>
